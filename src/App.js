@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          That's it for today's session.
+          Testing CI/CD
         </p>
       </header>
     </div>
