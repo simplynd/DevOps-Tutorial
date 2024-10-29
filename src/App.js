@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          CI CD is Amazing. Saves lot of time.
+          Do code chage, commit, go drink water, comeback and your changes are ready.
         </p>
       </header>
     </div>
