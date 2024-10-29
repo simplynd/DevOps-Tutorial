@@ -46,15 +46,15 @@ jobs:
         run: |
           ibmcloud login --apikey "${IBM_CLOUD_API_KEY}" -r us-south -g Default
 
-      # Create code engine project
-      - name: Create code engine project
+      # Select code engine project
+      - name: Select code engine project
         run: |
           ibmcloud ce project select --name React-App-Test
       
       # Create Registry Secret
-      - name: Create Registry Secret
-        run: |
-          ibmcloud ce secret create --format registry --name privatedocker --server 'https://index.docker.io/v1/' --username ${{ secrets.DOCKERHUB_USERNAME }} --password ${{ secrets.DOCKERHUB_TOKEN }}
+      # - name: Create Registry Secret
+      #   run: |
+      #     ibmcloud ce secret create --format registry --name privatedocker --server 'https://index.docker.io/v1/' --username ${{ secrets.DOCKERHUB_USERNAME }} --password ${{ secrets.DOCKERHUB_TOKEN }}
 
       # Deploy to Code Engine
       - name: Deploy to Code Engine
