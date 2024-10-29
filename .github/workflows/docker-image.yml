@@ -59,4 +59,4 @@ jobs:
       # Deploy to Code Engine
       - name: Deploy to Code Engine
         run: |
-          ibmcloud ce app create --name myhelloapp --image "${REGISTRY_HOSTNAME}""${IMAGE_NAME}" --registry-secret privatedocker --port 80
+          ibmcloud ce app create --name myhelloapp --image simplynd/nd-react --registry-secret privatedocker --port 80
