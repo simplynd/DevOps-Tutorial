@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to my amazing website test.
+          CI CD is Amazing. Saves lot of time.
         </p>
       </header>
     </div>
