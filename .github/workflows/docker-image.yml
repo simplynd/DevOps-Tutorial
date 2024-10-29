@@ -49,7 +49,7 @@ jobs:
       # Create code engine project
       - name: Create code engine project
         run: |
-          ibmcloud ce project create --name React-App-Test
+          ibmcloud ce project select --name React-App-Test
       
       # Create Registry Secret
       - name: Create Registry Secret
